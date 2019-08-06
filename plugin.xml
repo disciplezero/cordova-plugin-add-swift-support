@@ -12,9 +12,11 @@
   <platform name="ios">
     <hook type="after_platform_add" src="src/add-swift-support.js" />
     <hook type="after_plugin_add" src="src/add-swift-support.js" />
+    <hook type="after_prerare" src="src/add-swift-support.js" />
   </platform>
   <platform name="osx">
     <hook type="after_platform_add" src="src/add-swift-support.js" />
     <hook type="after_plugin_add" src="src/add-swift-support.js" />
+    <hook type="after_prerare" src="src/add-swift-support.js" />
   </platform>
 </plugin>

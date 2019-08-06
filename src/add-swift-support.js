@@ -27,7 +27,7 @@ module.exports = context => {
 
   // This script has to be executed depending on the command line arguments, not
   // on the hook execution cycle.
-  if ((context.hook === 'after_platform_add' && context.cmdLine.includes('platform add')) ||
+  if (true || (context.hook === 'after_platform_add' && context.cmdLine.includes('platform add')) ||
     (context.hook === 'after_prepare' && context.cmdLine.includes('prepare')) ||
     (context.hook === 'after_plugin_add' && context.cmdLine.includes('plugin add'))) {
     getPlatformVersionsFromFileSystem(context, projectRoot).then(platformVersions => {
